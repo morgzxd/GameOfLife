@@ -2,11 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-# define variables
 GRID_SIZE = int(input("Size of grid: "))
 
 NUM_GENERATIONS = int(input("Duration: "))
-
 
 def make_grid(size):
     grid = np.random.choice([0, 1], size=(size, size), p=[0.5, 0.5])
